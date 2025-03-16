@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia';
 
-export const userStore = defineStore("userStore", {
+export const userStoreDefinition = defineStore("userStore", {
   state: () => ({
     users: [],
   }),
   actions: {
     async fetchUsers() {
+      debugger;
       this.users = [
         { id: 1, name: "Alice", email: "alice@example.com", role: "Admin" },
         { id: 2, name: "Bob", email: "bob@example.com", role: "User" },

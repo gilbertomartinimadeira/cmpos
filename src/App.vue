@@ -1,9 +1,16 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import UserDataGrid from './components/UserDataGrid.vue';
 </script>
 
 <template>
-  <header>
+
+  <v-app>
+    <v-container>
+      <UserDataGrid />
+    </v-container>
+  </v-app>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -14,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView /> -->
 </template>
 
 <style scoped>
